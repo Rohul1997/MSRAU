@@ -1,8 +1,9 @@
 # Metroid Samus Returns Amiibo Unlocker #
 
 MSRAU is a tool used to edit your save to unlock amiibo only content on the Metroid Samus Returns.
-It currently can only unlock the 3 Reserve Tanks.
-I have plans to unlock the Fusion mode but may need help from others by dumping their completed save and possibly with Fusion mode unlocked.
+It currently can only unlock the 3 Reserve Tanks. 
+I have plans to unlock the Fusion mode but may need help from you guys.
+Please send me your saves if you have completed the game and if you have Fusion mode unlocked. :)
 
 ### How to use ###
 * Dump your save using JKSM
