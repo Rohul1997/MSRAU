@@ -11,6 +11,7 @@ It can change the game mode to Normal, Hard and Fusion which includes the fusion
 * Copy the dumped save onto your PC
 * Download MSRAU
 * Run MSRAU
+* Click the "Open" button and open the pkprfl.bmmssv file
 * Enable the stuff you want
 * Click "Save"
 * Your save should now have the content unlocked. 
