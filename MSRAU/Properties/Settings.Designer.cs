@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MSR_Amiibo_Unlocker.Properties
+namespace MSRAU.Properties
 {
 
 

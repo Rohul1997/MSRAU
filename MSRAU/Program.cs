@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MSR_Amiibo_Unlocker
+namespace MSRAU
 {
     static class Program
     {

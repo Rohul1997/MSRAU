@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MSR Amiibo Unlocker")]
+[assembly: AssemblyTitle("MSRAU")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Rohul1997")]
-[assembly: AssemblyProduct("MSR Amiibo Unlocker")]
+[assembly: AssemblyProduct("MSRAU")]
 [assembly: AssemblyCopyright("Rohul1997 Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
