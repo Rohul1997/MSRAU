@@ -32,11 +32,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Open_button = new System.Windows.Forms.Button();
             this.Save_button = new System.Windows.Forms.Button();
-            this.Reserve_tanks_checkBox = new System.Windows.Forms.CheckBox();
             this.Normal_radioButton = new System.Windows.Forms.RadioButton();
             this.Hard_radioButton = new System.Windows.Forms.RadioButton();
             this.Fusion_radioButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.Completed_save_checkBox = new System.Windows.Forms.CheckBox();
+            this.Metroid_art_checkBox = new System.Windows.Forms.CheckBox();
+            this.Concept_art_checkBox = new System.Windows.Forms.CheckBox();
+            this.Music_checkBox = new System.Windows.Forms.CheckBox();
+            this.Energy_tank_checkBox = new System.Windows.Forms.CheckBox();
+            this.Aeion_tank_checkBox = new System.Windows.Forms.CheckBox();
+            this.Missile_tank_checkBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -69,17 +75,6 @@
             this.Save_button.UseVisualStyleBackColor = true;
             this.Save_button.Click += new System.EventHandler(this.Save_button_Click);
             // 
-            // Reserve_tanks_checkBox
-            // 
-            this.Reserve_tanks_checkBox.AutoSize = true;
-            this.Reserve_tanks_checkBox.Enabled = false;
-            this.Reserve_tanks_checkBox.Location = new System.Drawing.Point(12, 65);
-            this.Reserve_tanks_checkBox.Name = "Reserve_tanks_checkBox";
-            this.Reserve_tanks_checkBox.Size = new System.Drawing.Size(260, 17);
-            this.Reserve_tanks_checkBox.TabIndex = 3;
-            this.Reserve_tanks_checkBox.Text = "Unlock Energy, Aeion and Missile Reserve Tanks";
-            this.Reserve_tanks_checkBox.UseVisualStyleBackColor = true;
-            // 
             // Normal_radioButton
             // 
             this.Normal_radioButton.AutoSize = true;
@@ -87,7 +82,7 @@
             this.Normal_radioButton.Location = new System.Drawing.Point(50, 42);
             this.Normal_radioButton.Name = "Normal_radioButton";
             this.Normal_radioButton.Size = new System.Drawing.Size(58, 17);
-            this.Normal_radioButton.TabIndex = 4;
+            this.Normal_radioButton.TabIndex = 3;
             this.Normal_radioButton.Text = "Normal";
             this.Normal_radioButton.UseVisualStyleBackColor = true;
             // 
@@ -109,7 +104,7 @@
             this.Fusion_radioButton.Location = new System.Drawing.Point(168, 42);
             this.Fusion_radioButton.Name = "Fusion_radioButton";
             this.Fusion_radioButton.Size = new System.Drawing.Size(120, 17);
-            this.Fusion_radioButton.TabIndex = 4;
+            this.Fusion_radioButton.TabIndex = 5;
             this.Fusion_radioButton.Text = "Fusion + Fusion Suit";
             this.Fusion_radioButton.UseVisualStyleBackColor = true;
             // 
@@ -121,16 +116,105 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mode:";
             // 
+            // Completed_save_checkBox
+            // 
+            this.Completed_save_checkBox.AutoSize = true;
+            this.Completed_save_checkBox.Enabled = false;
+            this.Completed_save_checkBox.Location = new System.Drawing.Point(11, 65);
+            this.Completed_save_checkBox.Name = "Completed_save_checkBox";
+            this.Completed_save_checkBox.Size = new System.Drawing.Size(266, 17);
+            this.Completed_save_checkBox.TabIndex = 6;
+            this.Completed_save_checkBox.Text = "Show save as completed on save selection screen";
+            this.Completed_save_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Metroid_art_checkBox
+            // 
+            this.Metroid_art_checkBox.AutoSize = true;
+            this.Metroid_art_checkBox.Enabled = false;
+            this.Metroid_art_checkBox.Location = new System.Drawing.Point(11, 124);
+            this.Metroid_art_checkBox.Name = "Metroid_art_checkBox";
+            this.Metroid_art_checkBox.Size = new System.Drawing.Size(86, 30);
+            this.Metroid_art_checkBox.TabIndex = 10;
+            this.Metroid_art_checkBox.Text = "Unlock\r\nMetroid II Art";
+            this.Metroid_art_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Metroid_art_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Concept_art_checkBox
+            // 
+            this.Concept_art_checkBox.AutoSize = true;
+            this.Concept_art_checkBox.Enabled = false;
+            this.Concept_art_checkBox.Location = new System.Drawing.Point(104, 124);
+            this.Concept_art_checkBox.Name = "Concept_art_checkBox";
+            this.Concept_art_checkBox.Size = new System.Drawing.Size(82, 30);
+            this.Concept_art_checkBox.TabIndex = 11;
+            this.Concept_art_checkBox.Text = "Unlock\r\nConcept Art";
+            this.Concept_art_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Concept_art_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Music_checkBox
+            // 
+            this.Music_checkBox.AutoSize = true;
+            this.Music_checkBox.Enabled = false;
+            this.Music_checkBox.Location = new System.Drawing.Point(192, 131);
+            this.Music_checkBox.Name = "Music_checkBox";
+            this.Music_checkBox.Size = new System.Drawing.Size(91, 17);
+            this.Music_checkBox.TabIndex = 12;
+            this.Music_checkBox.Text = "Unlock Music";
+            this.Music_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Music_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Energy_tank_checkBox
+            // 
+            this.Energy_tank_checkBox.AutoSize = true;
+            this.Energy_tank_checkBox.Enabled = false;
+            this.Energy_tank_checkBox.Location = new System.Drawing.Point(11, 88);
+            this.Energy_tank_checkBox.Name = "Energy_tank_checkBox";
+            this.Energy_tank_checkBox.Size = new System.Drawing.Size(87, 30);
+            this.Energy_tank_checkBox.TabIndex = 7;
+            this.Energy_tank_checkBox.Text = "Unlock\r\nEnergy Tank";
+            this.Energy_tank_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Energy_tank_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Aeion_tank_checkBox
+            // 
+            this.Aeion_tank_checkBox.AutoSize = true;
+            this.Aeion_tank_checkBox.Enabled = false;
+            this.Aeion_tank_checkBox.Location = new System.Drawing.Point(104, 88);
+            this.Aeion_tank_checkBox.Name = "Aeion_tank_checkBox";
+            this.Aeion_tank_checkBox.Size = new System.Drawing.Size(81, 30);
+            this.Aeion_tank_checkBox.TabIndex = 8;
+            this.Aeion_tank_checkBox.Text = "Unlock\r\nAeion Tank";
+            this.Aeion_tank_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Aeion_tank_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Missile_tank_checkBox
+            // 
+            this.Missile_tank_checkBox.AutoSize = true;
+            this.Missile_tank_checkBox.Enabled = false;
+            this.Missile_tank_checkBox.Location = new System.Drawing.Point(192, 88);
+            this.Missile_tank_checkBox.Name = "Missile_tank_checkBox";
+            this.Missile_tank_checkBox.Size = new System.Drawing.Size(85, 30);
+            this.Missile_tank_checkBox.TabIndex = 9;
+            this.Missile_tank_checkBox.Text = "Unlock\r\nMissile Tank";
+            this.Missile_tank_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Missile_tank_checkBox.UseVisualStyleBackColor = true;
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 86);
+            this.ClientSize = new System.Drawing.Size(287, 159);
+            this.Controls.Add(this.Missile_tank_checkBox);
+            this.Controls.Add(this.Music_checkBox);
+            this.Controls.Add(this.Aeion_tank_checkBox);
+            this.Controls.Add(this.Concept_art_checkBox);
+            this.Controls.Add(this.Energy_tank_checkBox);
+            this.Controls.Add(this.Metroid_art_checkBox);
+            this.Controls.Add(this.Completed_save_checkBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Fusion_radioButton);
             this.Controls.Add(this.Hard_radioButton);
             this.Controls.Add(this.Normal_radioButton);
-            this.Controls.Add(this.Reserve_tanks_checkBox);
             this.Controls.Add(this.Save_button);
             this.Controls.Add(this.Open_button);
             this.Controls.Add(this.label1);
@@ -138,7 +222,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main_Form";
-            this.Text = "MSRAU v1.1";
+            this.Text = "MSRAU v1.2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,11 +233,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Open_button;
         private System.Windows.Forms.Button Save_button;
-        private System.Windows.Forms.CheckBox Reserve_tanks_checkBox;
         private System.Windows.Forms.RadioButton Normal_radioButton;
         private System.Windows.Forms.RadioButton Hard_radioButton;
         private System.Windows.Forms.RadioButton Fusion_radioButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox Completed_save_checkBox;
+        private System.Windows.Forms.CheckBox Metroid_art_checkBox;
+        private System.Windows.Forms.CheckBox Concept_art_checkBox;
+        private System.Windows.Forms.CheckBox Music_checkBox;
+        private System.Windows.Forms.CheckBox Energy_tank_checkBox;
+        private System.Windows.Forms.CheckBox Aeion_tank_checkBox;
+        private System.Windows.Forms.CheckBox Missile_tank_checkBox;
     }
 }
 
